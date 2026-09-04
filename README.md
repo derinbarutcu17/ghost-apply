@@ -1,14 +1,41 @@
 # Ghost Apply
 
-Evidence-first job-application automation for the AI agent you already use.
+Point your AI agent at this repository and give it a job listing. Ghost Apply
+helps the agent research the role, ground every application claim in evidence,
+create and check the documents, and leave behind a receipt of what it prepared.
 
-Ghost Apply turns a structured role brief and a private candidate pack into a
-grounded application package, machine-checked PDFs, exact upload hashes, and an
-auditable receipt. It is local-first, dry-run-first, and driver-neutral.
+You do not need to understand the code or JSON schemas to start. Keep your
+personal CV, contact details, receipts, screenshots, and browser session data
+on your computer; this public repository is the reusable engine and operating
+guide, not a place to store them.
 
 It does not collect credentials, bypass CAPTCHA, mutate hidden form fields,
 upload through ATS APIs, or claim that a submission succeeded without visible
 confirmation.
+
+## Easiest way to use it with an AI agent
+
+1. Give your agent this repository URL:
+   `https://github.com/derinbarutcu17/ghost-apply`
+2. Give it the job-listing URL and the path to your private candidate pack.
+3. Paste this instruction:
+
+   > Read this repository's `README.md`, then `canonical/README.md` and
+   > `canonical/agent-skill.md`. Use Ghost Apply in `dry-run` mode for the
+   > supplied job listing and private candidate pack. Research the role,
+   > prepare grounded application documents, run every QA gate, and report the
+   > exact files and receipt. Keep personal data outside the repository. Stop
+   > before any live upload or submission unless I explicitly authorize that
+   > visible browser action.
+
+The agent should use the canonical documents as its instructions and the CLI
+as its handoff contract. If you only want to explore the project, run the fake
+example below; it uses no real identity or application data.
+
+For each dry run, the useful result is a folder containing a validated role
+brief, evidence-backed claims, generated documents, machine-readable QA
+results, staged upload copies, and an auditable receipt. The agent can explain
+each file in plain language when it finishes.
 
 ## Ten-minute fake run
 
