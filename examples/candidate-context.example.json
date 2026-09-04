@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "identity": {
+    "name": "Test Candidate",
+    "location": "Example City",
+    "email": "candidate@example.test",
+    "phone": "+00 000 000 000"
+  },
+  "headline": "Product Designer | Prototyping & Design Systems",
+  "summary": "Product designer with experience turning complex requirements into clear interfaces and working prototypes.",
+  "experience": [
+    {
+      "title": "Example Studio - Product Designer",
+      "meta": "Example City | 2024 - 2025",
+      "bullets": ["Designed a responsive workflow and documented reusable components."]
+    }
+  ],
+  "education": [],
+  "languages": ["English - fluent"],
+  "projects": [
+    {
+      "name": "Example Atlas",
+      "description": "Self-initiated data interface for exploring a public dataset.",
+      "url": "https://example.test/projects/atlas"
+    }
+  ],
+  "links": [
+    {"label": "Portfolio", "url": "https://example.test/portfolio"}
+  ],
+  "skills": ["Interaction design", "Figma", "React", "Design systems"],
+  "privacy": {"classification": "example-fake-data"}
+}

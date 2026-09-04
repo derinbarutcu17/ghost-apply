@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/role-cache.schema.json",
+  "title": "RoleResearchCache",
+  "type": "object",
+  "required": ["schema_version", "roles"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "roles": {"type": "array", "items": {"type": "object", "required": ["source_url", "retrieved_at", "ttl_hours"]}}
+  }
+}

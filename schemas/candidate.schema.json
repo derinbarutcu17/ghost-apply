@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/candidate.schema.json",
+  "title": "CandidatePack",
+  "type": "object",
+  "required": ["schema_version", "identity", "experience", "projects", "links"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "identity": {"type": "object"},
+    "headline": {"type": "string"},
+    "summary": {"type": "string"},
+    "experience": {"type": "array", "items": {"type": "object"}},
+    "education": {"type": "array"},
+    "languages": {"type": "array"},
+    "projects": {"type": "array", "items": {"type": "object"}},
+    "links": {"type": "array", "items": {"type": "object"}},
+    "privacy": {"type": "object"}
+  }
+}

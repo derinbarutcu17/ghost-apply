@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/agent-request.schema.json",
+  "title": "AgentRequest",
+  "type": "object",
+  "required": ["role_url", "candidate_path", "mode"],
+  "properties": {
+    "role_url": {"type": "string", "format": "uri"},
+    "candidate_path": {"type": "string"},
+    "mode": {"enum": ["dry-run", "review", "live-submit"]}
+  }
+}

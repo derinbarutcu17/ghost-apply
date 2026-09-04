@@ -1,0 +1,28 @@
+# Private user data and live application evidence
+private/
+runs/
+artifacts/
+*.env
+.env*
+*.pem
+*.key
+cookies*
+screenshots/
+browser-logs/
+
+# Python/tooling
+.venv/
+.venv*/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+__pycache__/
+*.py[cod]
+
+# OS/editor
+.DS_Store
+.idea/
+.vscode/

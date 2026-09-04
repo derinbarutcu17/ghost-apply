@@ -1,0 +1,1 @@
+"""Redacted, auditable application receipts."""

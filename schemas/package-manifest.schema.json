@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/package-manifest.schema.json",
+  "title": "ApplicationPackageManifest",
+  "type": "object",
+  "required": ["schema_version", "bundle_id", "policy", "source", "role", "artifacts"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "bundle_id": {"type": "string"},
+    "policy": {"type": "object", "required": ["submission_allowed"]},
+    "source": {"type": "object"},
+    "role": {"type": "object"},
+    "artifacts": {"type": "array", "items": {"type": "object"}}
+  }
+}

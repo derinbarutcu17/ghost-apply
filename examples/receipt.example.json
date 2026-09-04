@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "state": "draft",
+  "company": "Example Labs",
+  "role": "Product Designer",
+  "source_url": "https://example.test/jobs/product-designer",
+  "application_url": "https://example.test/apply/product-designer",
+  "retrieved_at": "2026-01-01T00:00:00Z",
+  "requirements": {"required": ["Product design"], "nice_to_have": []},
+  "form_questions": [],
+  "claim_ledger": [],
+  "eligibility": {"work_authorization": {"value": "unknown", "source": null}},
+  "artifacts": [],
+  "form_payload": [],
+  "submission": {"submitted_at": null, "confirmation_url": null, "confirmation_text": null},
+  "events": []
+}

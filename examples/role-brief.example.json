@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "company": "Example Labs",
+  "title": "Product Designer",
+  "source_url": "https://example.test/jobs/product-designer",
+  "application_url": "https://example.test/apply/product-designer",
+  "location": "Example City / Hybrid",
+  "employment_type": "Full-time",
+  "requirements": {
+    "required": ["Product design", "Prototyping", "Cross-functional collaboration"],
+    "nice_to_have": ["Design systems", "Frontend prototyping"]
+  },
+  "documents": {"required": ["cv"], "optional": ["cover_letter"]},
+  "form_questions": [],
+  "unknowns": ["work_authorization"]
+}

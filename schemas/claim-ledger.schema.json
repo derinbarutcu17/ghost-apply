@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/claim-ledger.schema.json",
+  "title": "ClaimLedger",
+  "type": "object",
+  "required": ["schema_version", "role", "claims", "eligibility"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "role": {"type": "object"},
+    "claims": {"type": "array", "items": {"type": "object"}},
+    "eligibility": {"type": "object"}
+  }
+}

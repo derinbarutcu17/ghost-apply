@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/form-ledger.schema.json",
+  "title": "FormLedgerEntry",
+  "type": "object",
+  "required": ["label", "required", "value", "source", "selected_state"],
+  "properties": {
+    "label": {"type": "string"},
+    "required": {"type": "boolean"},
+    "value": {},
+    "source": {"type": ["string", "null"]},
+    "selected_state": {"type": ["boolean", "string", "null"]}
+  }
+}

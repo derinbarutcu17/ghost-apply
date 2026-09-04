@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/receipt.schema.json",
+  "title": "ApplicationReceipt",
+  "type": "object",
+  "required": ["schema_version", "state", "company", "role", "source_url", "events"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "state": {"type": "string"},
+    "company": {"type": "string"},
+    "role": {"type": "string"},
+    "source_url": {"type": "string"},
+    "artifacts": {"type": "array"},
+    "form_payload": {"type": "array"},
+    "submission": {"type": "object"},
+    "events": {"type": "array"}
+  }
+}

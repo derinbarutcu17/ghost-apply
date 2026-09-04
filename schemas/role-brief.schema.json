@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ghost-apply.dev/schemas/role-brief.schema.json",
+  "title": "RoleBrief",
+  "type": "object",
+  "required": ["schema_version", "company", "title", "source_url", "requirements"],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "company": {"type": "string", "minLength": 1},
+    "title": {"type": "string", "minLength": 1},
+    "source_url": {"type": "string", "format": "uri"},
+    "application_url": {"type": ["string", "null"]},
+    "location": {"type": ["string", "null"]},
+    "employment_type": {"type": ["string", "null"]},
+    "requirements": {"type": "object"},
+    "documents": {"type": "object"},
+    "form_questions": {"type": "array"},
+    "unknowns": {"type": "array"}
+  }
+}
